@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: hsl(36, 100%, 99%);
+}
+
+.web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-page {
+    padding: 75px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    max-width: 1200px;
+}
+
+.close {
+    display: none;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.web-name {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu {
+    grid-area: 1/6/2/10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.click:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+
+.web-img {
+    grid-area: 2/1/6/7;
+    margin: 10px;
+}
+
+.web-desc {
+
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.web-phone {
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.web-3 {
+    grid-area: 6/1/8/4;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card1 {
+    grid-area: 6/4/8/7;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.read {
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.read:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.card2 {
+    grid-area: 2/7/8/10;
+    margin: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.card2-line1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.card2line2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card2line2:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+
+.card2-line3 {
+    color: hsl(233, 8%, 79%);
+}
+
+.card3 {
+    grid-area: 8/1/9/4;
+    margin: 10px;
+}
+
+.card4 {
+    grid-area: 8/4/9/7;
+    margin: 10px;
+}
+
+.card5 {
+    grid-area: 8/7/9/10;
+    margin: 10px;
+}
+
+.card3,
+.card4,
+.card5 {
+    display: flex;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.line1 {
+    color: hsl(233, 8%, 79%);
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.line2 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.line2:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+.line3 {
+    font-size: 15px;
+}
+
+.card-img {
+    max-height: 100px;
+    max-width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    .web-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web {
+        width: 400px;
+    }
+
+    .web-phone {
+        display: inline;
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .web-3 {
+        font-size: 28px;
+    }
+
+    .web-desc {
+        display: none;
+    }
+
+    .close {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .close:hover {
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        background-color: white;
+        left: 135px;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+    .home {
+        margin: 70px 0 0 0;
+    }
+
+    .click {
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .web-name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .icon-menu:hover {
+        cursor: pointer;
+    }
+
+    .mask {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #333;
+        opacity: 0.8;
+        z-index: -100;
+    }
+
+    .mask {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .menu {
+        display: flex;
+    }
+}

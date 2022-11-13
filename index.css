@@ -192,7 +192,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .icon-menu {
-        display: block;
+        display: flex;
     }
     .web-page {
         display: flex;
@@ -255,11 +255,6 @@ body {
         display: flex;
         justify-content: space-between;
     }
-
-    .icon-menu {
-        display: block;
-    }
-
     .icon-menu:hover {
         cursor: pointer;
     }
@@ -286,8 +281,5 @@ body {
 @media screen and (min-width: 600px){
     .menu {
         display: flex;
-    }
-    .icon-menu {
-        display: none;
     }
 }

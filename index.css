@@ -191,6 +191,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .icon-menu {
+        display: block;
+    }
     .web-page {
         display: flex;
         flex-direction: column;
@@ -283,5 +286,8 @@ body {
 @media screen and (min-width: 600px){
     .menu {
         display: flex;
+    }
+    .icon-menu {
+        display: none;
     }
 }
